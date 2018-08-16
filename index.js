@@ -101,12 +101,11 @@ function createRock(x) {
         else {
           ROCKS.remove(rock)
         }
+      step()
       }
     }
   }
 
-
-  step()
   // We should kick of the animation of the rock around here
   window.requestAnimationFrame(moveDodger)
   // Add the rock to ROCKS so that we can remove all rocks
