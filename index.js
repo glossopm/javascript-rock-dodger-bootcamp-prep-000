@@ -125,6 +125,9 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  gameInterval = null
+  body.remove('#dodger')
+  ROCKS.remove('.rocks')
   // need to remove ROCKS Still
   alert("YOU LOSE!")
 }
