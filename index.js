@@ -125,7 +125,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  ROCKS.remove(rock)
+  ROCKS.remove(`${.rock}`)
   // need to remove ROCKS Still
   alert("YOU LOSE!")
 }
