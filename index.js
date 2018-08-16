@@ -100,8 +100,6 @@ function createRock(x) {
         else {
           ROCKS.remove(rock)
         }
-
-      }
     }
   }
 
