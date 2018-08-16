@@ -98,7 +98,7 @@ function createRock(x) {
           return window.requestAnimationFrame(moveRock)
         }
         else {
-          ROCKS[0].remove(rock)
+          rock.remove()
         }
     }
   }
