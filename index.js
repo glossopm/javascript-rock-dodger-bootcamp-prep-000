@@ -93,7 +93,10 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
     else {
+      function step() {
         rock.style.top = `${top += 2}px`
+        if (top < 400) {
+          return window.requestAnimationFrame(moveRock)
         }
         else {
           ROCKS.remove(rock)
@@ -195,5 +198,5 @@ function start() {
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 10000)
+  }, 1000)
 }
