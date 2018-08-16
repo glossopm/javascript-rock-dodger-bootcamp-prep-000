@@ -127,7 +127,7 @@ function createRock(x) {
 function endGame() {
   gameInterval = null
   document.remove('#dodger')
-  ROCKS.remove('.rocks')
+  ROCKS = []
   // need to remove ROCKS Still
   alert("YOU LOSE!")
 }
